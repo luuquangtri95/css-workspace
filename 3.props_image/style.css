@@ -1,0 +1,28 @@
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* center với thẻ block */
+
+/* .image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+} */
+
+/* center với thẻ inline và inline-block */
+
+.parent {
+  text-align: center;
+}
+
+.image {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+}

@@ -1,0 +1,27 @@
+/* tuong tự child selectors */
+/* nhưng khác nhau ở chỗ là check đúng kiểu mới ráp css */
+
+
+p:first-of-type {
+  color: aqua;
+}
+
+p:last-of-type {
+  color: red;
+}
+
+li:first-of-type {
+  color: red;
+}
+
+li:nth-of-type(2) {
+  color: green
+}
+
+li:nth-last-of-type(2) {
+  color: blue;
+}
+
+li:last-of-type {
+  color: blueviolet;
+}

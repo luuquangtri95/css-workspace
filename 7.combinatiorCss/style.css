@@ -1,0 +1,12 @@
+/* cùng cấp, và phải đứng liền kề */
+h3+.title {
+  color: red;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+/* đừng cùng cấp là được, k cần theo thự tự */
+h3~.title-2 {
+  color: blue;
+  font-size: 3rem;
+}

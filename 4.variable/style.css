@@ -1,0 +1,16 @@
+:root {
+  /* global var */
+  --primary-color: #000;
+  --secondary-color: #ffa400;
+}
+
+/* use var */
+body {
+  color: var(--primary-color);
+}
+
+.shadow {
+  /* local var */
+  --primary-color: purple;
+  color: var(--primary-color);
+}

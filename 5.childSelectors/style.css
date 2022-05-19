@@ -1,0 +1,49 @@
+ul {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+li:first-child {
+  color: red;
+}
+
+li:last-child {
+  color: aqua;
+}
+
+li:nth-child(2) {
+  color: purple;
+}
+
+li:nth-child(4) {
+  color: green;
+}
+
+/*  */
+
+li:nth-last-child(2) {
+  color: blue;
+}
+
+li:not(:first-child) {
+  color: brown;
+}
+
+li:not(:last-child) {
+  color: violet;
+}
+
+/*  */
+
+li:nth-child(odd) {
+  color: red;
+}
+
+li:nth-child(even) {
+  color: blue;
+}
+
+/*  */
+li:nth-child(2n + 1) {
+  color: darkred;
+}

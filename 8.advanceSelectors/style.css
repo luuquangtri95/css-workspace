@@ -1,0 +1,25 @@
+/* ^= bắt đầu bằng */
+a[href^="http"] {
+  color: red;
+  font-size: 3rem;
+}
+
+/* $= kết thúc bằng */
+a[href$=".vn"] {
+  color: yellow;
+}
+
+/* *=: có chứa */
+a[href*="xxx"] {
+  color: chartreuse;
+}
+
+/* = chính xác */
+div[data-title="luu quang tri"] {
+  color: chocolate;
+}
+
+a[href*="xxx"] {
+  color: chartreuse;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,34 @@
+html {
+  font-size: 62.5%;
+}
+
+.boxed {
+  width: 10rem;
+  height: 10rem;
+  border: 5px solid black;
+  padding: 1rem;
+  background-color: orange;
+
+  box-sizing: border-box;
+
+  /* 
+
+  =>> cách tính của box-sizing: content-box
+
+  width = width + padding-left + padding-right + border-left + border-right
+          100px + 10px + 10px + 5px + 5px = 130px
+  height = height + padding-top + padding-bottom + border-top + border-bottom
+          100px + 10px + 10px + 5px + 5px = 130px
+  */
+
+
+  /* 
+  
+  =>> cách tính của box-sizing: border-box
+
+  width = width - padding-left - padding-right - border-left - border-right
+          100px - 10px - 10px - 5px - 5px = 70px
+  height = height - padding-top - padding-bottom - border-top - border-bottom
+          100px - 10px - 10px - 5px - 5px = 70px
+  */
+}

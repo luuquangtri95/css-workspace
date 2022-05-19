@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- thẻ inline sẽ có độ rộng (width) bằng nội dung mà nó chưa -->
+    <!-- nếu có nhiều thẻ inline cùng cấp với sau sẽ nằm trên 1 hàng -->
+    <!-- bị hạn chế về thuộc tính css -->
+
+    <!-- ---------------------------------------------------- -->
+
+    <!-- thẻ block sẽ có độ rộng full 100% phần tử cha chứa nó-->
+    <!-- nếu nhiều thẻ block nằm cùng cấp với nhau, nó sẽ rớt xuống hàng -->
+
+    <span>test inline</span>
+    <span>test inline</span>
+    <span>test inline</span>
+    <span>test inline</span>
+    <span>test inline</span>
+
+    <p>test block</p>
+    <p>test block</p>
+    <p>test block</p>
+    <p>test block</p>
+    <p>test block</p>
+
+    <!-- thẻ a là thẻ inline nên sẽ nằm đc bên trong thẻ block -->
+    <p>nếu bạn muốn đọc thêm thì nhấn <a href="#">vào đây</a></p>
+
+    <!-- nếu bên trong thẻ block mà có thêm 1 thẻ block nữa thì sẽ bị nhảy xuống hàng -->
+    <p>nếu bạn muốn đọc thêm thì nhấn <p >vào đây</p></p>
+  </body>
+</html>
