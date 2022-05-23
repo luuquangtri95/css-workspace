@@ -1,0 +1,17 @@
+.boxed {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+
+  /* scale: scaleX scaleY */
+  /* tăng chiều rộng và dài x2 */
+  /* transform: scaleX(2) scaleY(2); */
+  transform: scale(2, 2);
+
+
+  /* rotate */
+  transform: rotate(45deg);
+
+  /* translate: translateX translateY */
+  transform: translateX(100px) translateY(60px);
+}

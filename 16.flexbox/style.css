@@ -1,0 +1,17 @@
+.list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.list__item {
+  padding: 1rem;
+  background-color: orange;
+  margin: 0 5px;
+}
+
+.list__item:last-child {
+  /* align-self: baseline; */
+  align-self: flex-end;
+}

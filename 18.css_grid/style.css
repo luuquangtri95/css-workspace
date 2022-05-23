@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.grid {
+  display: none;
+  /* display: grid; */
+  /* chia column in grid */
+  /* grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px; */
+  /* grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4, 1fr);
+
+  /* tạo khoảng trống giữa item */
+  /* grid-column-gap: 20px;
+  grid-row-gap: 20px; */
+  grid-gap: 20px 40px;
+
+  grid-template-rows: 200px 400px;
+}
+
+.grid2 {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 20px;
+
+}
+
+.grid2 .grid-item:first-child {
+  /* grid-column: grid-column-start grid-column-end */
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.grid2 .grid-item:nth-child(4) {
+  grid-column: 1/2;
+}
+
+.grid2 .grid-item:nth-child(5) {
+  grid-column: 2/3;
+}
+
+.grid2 .grid-item:last-child {
+  grid-column: 3/5;
+  grid-row: 2/4;
+}
+
+/* grid3 */
+
+.grid3 {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 20px;
+  grid-template-areas:
+    "h1 h1 h2 h3"
+    "h1 h1 h6 h6"
+    "h4 h5 h6 h6";
+  /* 
+  h1 h1 h2 h3
+  h1 h1 h6 h6
+  h4 h5 h6 h6
+  */
+}
+
+.grid3 .grid-item:first-child {
+  grid-area: h1;
+}
+
+.grid3 .grid-item:nth-child(4) {
+  grid-area: h4;
+}
+
+.grid3 .grid-item:nth-child(5) {
+  grid-area: h5;
+}
+
+.grid3 .grid-item:last-child {
+  grid-area: h6;
+}

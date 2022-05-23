@@ -1,0 +1,28 @@
+.bar {
+  width: 300px;
+  height: 10px;
+  background-color: #ccc;
+  margin: 5rem auto 0;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.bar-progress {
+  height: 100%;
+  width: 50%;
+  border-radius: inherit;
+  background-color: green;
+
+}
+
+.bar-circle {
+  width: 2rem;
+  height: 2rem;
+  background-color: green;
+  border-radius: 2rem;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrap {
+  width: 100%;
+  height: 50rem;
+  background-color: black;
+  position: relative;
+}
+
+p {
+  color: white;
+}
+
+.boxed {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+
+  /* top: 10px;
+  left: 10px; */
+
+  /* top: 10px;
+  right: 10px; */
+
+  /* bottom: 10px;
+  right: 10px */
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+
+  /* overlay all */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+}
